@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    input{
+      /* 일반적으로 수평 배치 */
+      height: 70px;
+      display: inline-block; /*기본값*/
+    }
+    button{
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <!-- past : 갱신 / get : 조회 (★기본값) -->
+  <form action="https://search.naver.com/search.naver" 
+        method="GET"
+        autocomplete="off"
+        novalidate>
+        <!--autocomplete="off" : 자동완성 끄기
+        novalidate (ex.이메일에)경고창 제거 - 직접 커스텀 해야함-->
+    <input type="text" name="query">
+    <button>검색</button>
+  </form>
+</body>
+</html>
