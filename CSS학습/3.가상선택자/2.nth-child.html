@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #fruits li:first-child {
+      color :rgb(242, 7, 7);
+    }
+    #fruits li:last-child {
+      color :rgb(51, 133, 153);
+    }
+    #fruits li:nth-child(2) {
+      color :orange;
+    }
+    #fruits li:nth-child(2n+1) {
+      background: rgb(183, 235, 205);
+    }
+    #fruits li:not(.orange){
+      font-style: italic;
+    }
+    .main p:nth-child(3) { 
+      /* p중에 3번째가 아니라 3번째가 p이면 적용해라! */
+      color: palevioletred;
+    }
+
+  </style>
+</head>
+<body>
+  <ul id="fruits">
+    <li>딸기</li>
+    <li class="orange">오렌지</li>
+    <li>바나나</li>
+    <li>사과</li>
+    <li>망고</li>
+  </ul>
+
+  <div class="main">
+    <h1>h1</h1>
+    <p>p1</p>
+    <p>p2</p>
+    <p>p3</p>
+    <p>p4</p>
+    <div>div</div>
+  </div>
+</body>
+</html>

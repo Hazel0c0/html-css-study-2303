@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    div {
+      /* color: blue !important; */
+    }
+
+    #c-y {
+      color: rgb(226, 238, 3);
+    }
+
+    .c-g {
+      color: greenyellow;
+    }
+
+    body {
+      color: aqua;
+    }
+
+    div {
+      color: tomato;
+    }
+
+    h1 {
+      color: lightcoral;
+    }
+
+    .bbb h1 {
+      color: lightblue;
+    }
+
+    #aaa h1 {
+      color: lightgoldenrodyellow;
+    }
+
+    #aaa div.bbb h1 {
+      color: lightseagreen
+    }
+
+    html body #aaa .bbb h1 {
+      color: lightgray
+    }
+
+    div.bbb>h1 {
+      color: lightsalmon
+    }
+  </style>
+</head>
+
+<body>
+  <!-- #c-y.c-g{안녕하세요} -->
+  <div id="c-y" class="c-g" style="color: orchid">안녕하세요1</div>
+  <div id="c-y" class="c-g">안녕하세요2</div>
+  <div class="c-g">안녕하세요3</div>
+  <div>안녕하세요4</div>
+  <span>안녕하세요5</span>
+
+  <hr>
+
+  <!-- #aaa>.bbb>h1{안녕하세요6} -->
+  <div id="aaa">
+    <div class="bbb">
+      <h1>안녕하세요6</h1>
+    </div>
+  </div>
+
+</body>
+
+</html>
