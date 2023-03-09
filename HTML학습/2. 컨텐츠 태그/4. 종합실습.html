@@ -1,49 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../common.css">
+  <style>
+    .container {
+      /* background: orange; */
+      width: 85%;
+      margin: 0 auto;
+    }
+    .container header {
+      /* border: 4px solid red; */
+      border-bottom: 4px  solid lightgray;
+      padding: 15px 10px;
+      height: 100px;
+      line-height: 100px;
+    }
+    .container header h1 {
+      float: left;
+      font-weight: 700;
+      font-size: 1.5em;
+      margin-left: 10px;
+    }
+    .container header nav {
+      float: right;
+    }
+    .container header nav li {
+      float: left;  /*습관적으로 부모요소에 clear 걸어주기*/
+    }
+    .container .main {
+      border: 4px solid wheat;
+      margin: 40px 0 60px;
+      padding: 40px 35px;
+    }
+    .container footer {
+      border: 4px solid green;
+    }
+    .container .main h2 {
+      margin-bottom: 15px;
+      border-bottom: 3px dotted tomato;
+      padding-bottom: 5px;
+
+      color: tomato;
+      font-size: 1.8em;
+      font-weight: 700;
+    }
+    .container .main .article-list { 
+    }
+    .container .main .article-list article {
+      border: 5px solid salmon;
+      height: 250px;
+      padding: 40px;
+      float: left;
+      margin-right: 5%;
+      width: 30%;
+      /*꿀팀
+      넓이 100% 중 1. 마진 얼마나 쓸지 (: 5% *2 = 10%)
+      남은 90% 요소 3개 ->30%씩 */
+    }
+    .container .main .article-list article:last-child {
+      /* 마지막은 빼줘야함 */
+      margin-right: 0;
+    }
+    .container .main .article-list article * {
+      text-align: center;
+    }
+    .container .main .article-list article h3 {
+      background: pink;
+      margin-bottom: 20px;
+      font-weight: 700;
+      font-size: 1.3em;
+
+    }
+    .container .main .article-list article p {
+      background: skyblue;
+
+    }
+  </style>
 </head>
 
 <body>
+
   <div class="container">
-    <header>
-      <h1>logo</h1>
+    <header class="clearfix">
+      <h1>로고</h1>
       <nav>
-        <ul>
+        <ul class="clearfix">
           <li><a href="#">메뉴1</a></li>
           <li><a href="#">메뉴2</a></li>
           <li><a href="#">메뉴3</a></li>
         </ul>
       </nav>
     </header>
-
     <section class="main">
-      <h2>section</h2>
-      <div class="article-list">
+      <h2>Section</h2>
+      <div class="clearfix article-list">
         <article>
-          <!-- article은 잘 몰라도됨 -->
           <h3>article1</h3>
-          <p>내용~!~!~!~!~!</p>
+          <p>blah blah~~</p>
         </article>
         <article>
           <h3>article2</h3>
-          <p>내용~!~!~!~!~!</p>
+          <p>blah blah~~</p>
         </article>
         <article>
           <h3>article3</h3>
-          <p>내용~!~!~!~!~!</p>
+          <p>blah blah~~</p>
         </article>
       </div>
     </section>
-
     <footer>
       <div class="contact">
         <div class="email">
-          <!-- a태그는 div안에 넣는게 좋다! -->
           <a href="#">이메일 전송</a>
         </div>
         <div class="phone">
@@ -51,9 +124,11 @@
         </div>
       </div>
     </footer>
-
-    <aside></aside>
+    <aside>
+      <!-- <img src="" alt=""> -->
+    </aside>
   </div>
+
 </body>
 
 </html>
