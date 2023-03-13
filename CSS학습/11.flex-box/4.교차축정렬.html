@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      height: 400px;
+      border: 4px solid #000;
+      padding: 20px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      /* 교차 축 정렬*/
+      /* align-content: stretch; 고정 height 주면 적용 X h-auto에만 사용 가능 */
+      /* align-content: center; -뭉탱이로 취급*/
+      align-items: center;  /*한줄한줄 취급*/
+
+    }
+
+    .item {
+      width: 150px;
+      /* height: 100px; */
+      border: 4px solid red;
+      border-radius: 10px;
+      font-size: 40px;
+
+      /* text-align: center;
+      line-height: 100px; 
+      line-height 안정해져있으면 사용 못함*/
+
+      /* text 중앙정렬
+      text도 자식으로 봄 */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+  </div>
+</body>
+
+</html>
