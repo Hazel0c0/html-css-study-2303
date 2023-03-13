@@ -1,0 +1,112 @@
+@import url('../../common.css');
+body{
+  background-color: gray;
+  font-size: 12px;
+}
+#wrapper {
+  background-color: white;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* 해더 */
+header {
+  background-color:pink;
+  display: block;
+  text-align: center;
+}
+header h1{
+  width: 70%;
+  margin: 0 auto;
+  background-color: orange;
+  color: white;
+  font-size: 3em;
+  font-weight: 900;
+  padding: 10px;
+}
+header h1 span {
+  display: block;
+  font-size: 0.5em;
+}
+header h2 {
+  background-color: rgb(189, 187, 187);
+}
+
+/* 컨테이너 */
+.container {
+
+}
+
+/* 왼쪽 메뉴 */
+.container .side-menu{
+  width: 20%;
+  float: left;
+
+}
+.container .side-menu h3 {
+  background-color: brown;
+}
+/* 중복 */
+.side-menu h3, .art-piece .title{
+  color: white;
+  font-size: 1.2em;
+  font-weight: 600;
+  padding: 7px;
+}
+.container .side-menu ul, .banner ,.main-content {
+  padding: 8px;
+  font-size: 0.8em;
+}
+.container .side-menu li ,.container .main-content .art-piece{
+  margin: 10px 0;
+}
+
+/* 가운데 메인 */
+.container .main-content {
+  background-color: lightgray;
+  width: 60%;
+  float: left;
+}
+.container .main-content .title {
+  background-color: rgb(23, 65, 115);
+}
+.container .main-content .art-piece .artist {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.container .main-content .art-piece  .detail {
+  margin: 15px 0 20px;
+/* background-color: aqua; */
+}
+
+/* 오른쪽 메뉴 */
+.container .banner {
+  width: 20%;
+  float: left;
+  display: block;
+}
+.container .banner span{
+  display: block;
+}
+
+
+
+.container .banner h3 {
+  font-size: 1.4em;
+}
+.container .banner h3 span, li a {
+  text-decoration: underline;
+  font-weight: 600;
+  margin: 7px 0;
+}
+/* .container .banner h3 span, a{
+  text-decoration: underline;
+  font-weight: 600;
+} */
+.container .banner .all {
+  color: gray;
+}
+.container .banner .love {
+  color: orange;
+}
